@@ -4,23 +4,27 @@ import { useEffect, useState } from 'react/cjs/react.development';
 function Slides({slides}) {
 
     let  [id,setId]= useState(0)
-
+    
+    
     
     const next =()=>{
         
        
         if(id < slides.length  && id != slides.length-1){
             console.log("Length is ",slides.length +" id is ",id)
+            
             return setId(++id)
+
         }
      }
 
      const prev =()=>{
          
         if(id <= slides.length && id > 0){
-            console.log(id)
+           
             return setId(--id)
         }
+        
      }
 
      const restart =()=>{

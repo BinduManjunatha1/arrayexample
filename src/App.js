@@ -7,12 +7,7 @@ const title = "Slideshow App";
 
 
 function App({slides}) {
-    const [slide,setSlide]=useState('')
-    const [id,setId]= useState(0)
     
-    useEffect(()=>{
-        setSlide(slides[0])
-    },[])
 
 
     return (
